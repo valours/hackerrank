@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "ava --verbose"
+  },
+  "dependencies": {
+    "ava": "^0.25.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "ignore-styles": "^5.0.1"
+  }
+}
