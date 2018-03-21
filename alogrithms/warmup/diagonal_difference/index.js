@@ -12,4 +12,3 @@ module.exports = (arr) => {
   }, [0, 0]);
   return Math.abs(ar[0]-ar[1]);
 };
-ls
