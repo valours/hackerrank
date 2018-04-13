@@ -6,3 +6,5 @@ main = do
     val2 <- readLn
     let sum = solveMeFirst val1 val2
     damn sum
+
+main = putStrLn "hello world"

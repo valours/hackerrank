@@ -9,6 +9,6 @@ test('diagonal_difference', (t) => {
     [10, 8, -12],
   ];
   const output = 15;
+
   t.is(diagonalDifference(input), output);
 });
-
