@@ -1,4 +1,5 @@
+// eslint-disable-next-line
 module.exports = (arr) => {
-    const ar = [];
-    return ar;
+  const ar = [];
+  return ar;
 };
