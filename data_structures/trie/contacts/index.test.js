@@ -2,7 +2,7 @@ import test from 'ava';
 
 const contacts = require('.');
 
-test.only('contacts', (t) => {
+test.skip('contacts', (t) => {
   const queries = [
     ['add', 'hack'],
     ['add', 'hackerrank'],

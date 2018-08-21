@@ -2,7 +2,8 @@
   "name": "hackerrank_solutions",
   "version": "1",
   "scripts": {
-    "test": "ava --watch --verbose"
+    "test": "ava --watch",
+    "test:watch": "ava --watch --verbose"
   },
   "dependencies": {
     "ava": "^0.25.0",
