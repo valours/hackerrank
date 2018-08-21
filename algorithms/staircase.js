@@ -1,15 +1,10 @@
 module.exports = (input) => {
   const output = [];
-  for (let l = 0; l < input; l++) {
-    let line = '';
-    for (let i = 0; i < input; i++) {
-      if (i < input - l) {
-        line = line.concat('#');
-      } else {
-        line = line.concat(' ');
-      }
-    }
-    output.push(line);
+  const line = Array.from({ length: input }, () => ' ');
+  for (let l = input; l > 0; l-- ) {
+    const currentLine = line;
+    currentLine[l - 1] = '#';
+    output.push(currentLine.slice().join(''));
   }
   return output;
 };

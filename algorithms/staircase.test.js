@@ -1,9 +1,9 @@
 import test from 'ava';
 
 // eslint-disable-next-line
-const staircase = require('.');
+const staircase = require('./staircase');
 
-test.skip('staircase', (t) => {
+test('staircase', (t) => {
   const input = 4;
   const output = [
     '   #',
@@ -11,5 +11,5 @@ test.skip('staircase', (t) => {
     ' ###',
     '####',
   ];
-  t.is(staircase(input), output);
+  t.deepEqual(staircase(input), output);
 });
