@@ -1,6 +1,6 @@
 import test from 'ava';
 
-const diagonalDifference = require('.');
+const diagonalDifference = require('./diagonalDifference');
 
 test('diagonal_difference', (t) => {
   const input = [
