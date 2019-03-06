@@ -1,8 +1,9 @@
 import test from 'ava';
 
-const plus_minus = require('./plusMinus');
+const sock_merchant = require('./sock-merchant');
 
-test('plus_minus', (t) => {
+// TODO: fix 
+test('sock_merchant', (t) => {
   const input = [-4, 3, -9, 0, 4, 1];
   const output = [
     '0.500000',
