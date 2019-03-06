@@ -1,6 +1,6 @@
 import test from 'ava';
 
-const sock_merchant = require('./sock-merchant');
+const sock_merchant = require('./sockMerchant');
 
 // TODO: fix 
 test('sock_merchant', (t) => {
