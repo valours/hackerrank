@@ -1,36 +1,20 @@
-import t from 'ava';
-import chai, { expect } from 'chai';
-import sinon from 'sinon';
-import sinonChai from 'sinon-chai';
+const staircase = require("./staircase");
 
-chai.use(sinonChai);
-const staircase = require('./staircase');
-
-let consoleLog;
-
-t.before(() => {
-  consoleLog = sinon.spy(console, 'log');
-});
-
-t('staircase', (t) => {
+it("staircase", () => {
   // given
   const n = 6;
 
   // when
-  staircase(n);
+  const result = staircase(n);
 
   // then
   const argsExpected = [
-    '     #',
-    '    ##',
-    '   ###',
-    '  ####',
-    ' #####',
-    '######',
+    "     #",
+    "    ##",
+    "   ###",
+    "  ####",
+    " #####",
+    "######",
   ];
-  sinon.assert.callCount(consoleLog, 6);
-  consoleLog.getCalls().forEach((call, i) => {
-    expect(call).to.have.be.calledWith(argsExpected[i]);
-  });
-  t.pass();
+  expect(result).toEqual(argsExpected);
 });
