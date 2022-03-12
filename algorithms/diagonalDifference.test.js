@@ -1,14 +1,16 @@
-import test from 'ava';
+const diagonalDifference = require("./diagonalDifference");
 
-const diagonalDifference = require('./diagonalDifference');
-
-test('diagonal_difference', (t) => {
+it("diagonal_difference", () => {
+  // given
   const input = [
     [11, 2, 4],
     [4, 5, 6],
     [10, 8, -12],
   ];
-  const output = 15;
 
-  t.is(diagonalDifference(input), output);
+  // when
+  const result = diagonalDifference(input);
+
+  // then
+  expect(result).toEqual(15);
 });
