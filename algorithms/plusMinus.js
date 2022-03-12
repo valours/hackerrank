@@ -1,4 +1,4 @@
-module.exports = (input) => {
+const plusMinus = (input) => {
   const positiveNumber = input.filter((n) => n > 0);
   const negativeNumber = input.filter((n) => n < 0);
   const zero = input.filter((n) => n === 0);
@@ -10,3 +10,5 @@ module.exports = (input) => {
   ];
   return output;
 };
+
+module.exports = plusMinus;

@@ -1,6 +1,6 @@
 const plusMinus = require("./plusMinus");
 
-it("plusMinus", (t) => {
+it("plusMinus", () => {
   // given
   const input = [-4, 3, -9, 0, 4, 1];
 
