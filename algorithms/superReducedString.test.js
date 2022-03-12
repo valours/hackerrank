@@ -1,9 +1,12 @@
-import test from 'ava';
+const superReducedString = require("./superReducedString");
 
-const superReducedString = require('./superReducedString');
+it("superReducedString", () => {
+  // given
+  const input = "aabbcccdd";
 
-test('superReducedString', (t) => {
-  const input = 'aabbcccdd';
-  const output = 'abcd';
-  t.is(superReducedString(input), output);
+  // when
+  const result = superReducedString(input);
+
+  // then
+  expect(result).toEqual("abcd");
 });
