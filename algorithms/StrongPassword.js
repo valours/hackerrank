@@ -3,7 +3,6 @@ const lower_case = "abcdefghijklmnopqrstuvwxyz";
 const upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const special_characters = "!@#$%^&*()-+";
 
-module.exports = (length, password) => {
-  console.log('length', length);
-  console.log('password', password);
-};
+const strongPassword = (length, password) => {};
+
+module.exports = strongPassword;

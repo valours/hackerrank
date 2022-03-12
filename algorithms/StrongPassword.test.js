@@ -1,14 +1,12 @@
-import test from 'ava';
+const strongPassword = require("./StrongPassword");
 
-const strongPassword = require('./StrongPassword');
-
-test.skip('The password must be strong', (t) => {
+it.skip("The password must be strong", () => {
   // given
-  const input = [3, 'Ab1'];
+  const input = [3, "Ab1"];
 
   // when
   const password = strongPassword(...input);
 
   // then
-  t.is(password, 3);
+  expect(password).toEqual(3);
 });
