@@ -1,15 +1,25 @@
-import test from 'ava';
+const countingValleys = require("./countingValley");
 
-const countingValleys = require('./countingValley');
+describe("What do you want to describe ?", () => {
+  it("UDDDUDUU", () => {
+    // given
+    const input = [8, "UDDDUDUU"];
 
-test('UDDDUDUU', (t) => {
-  const input = [8, 'UDDDUDUU'];
-  const output = 1;
-  t.is(countingValleys(...input), output);
-})
+    // when
+    const result = countingValleys(...input);
 
-test('DDUUDDUDUUUD', (t) => {
-  const input = [12, 'DDUUDDUDUUUD'];
-  const output = 2;
-  t.is(countingValleys(...input), output);
-})
+    // then
+    expect(result).toEqual(1);
+  });
+
+  it("DDUUDDUDUUUD", () => {
+    // given
+    const input = [12, "DDUUDDUDUUUD"];
+
+    // when
+    const result = countingValleys(...input);
+
+    // then
+    expect(result).toEqual(2);
+  });
+});
