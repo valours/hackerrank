@@ -1,9 +1,12 @@
-import test from 'ava';
+const camelCase = require("./camelCase");
 
-const camelCase = require('./camelCase');
+test("camel case", () => {
+  // given
+  const input = "saveChangesInTheEditor";
 
-test('camelCase', (t) => {
-  const input = 'saveChangesInTheEditor';
-  const output = 5;
-  t.is(camelCase(input), output);
+  // when
+  const result = camelCase(input);
+
+  // then
+  expect(result).toEqual(5);
 });
