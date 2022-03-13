@@ -1,6 +1,6 @@
 const diagonalDifference = require("./diagonalDifference");
 
-it("diagonal_difference", () => {
+it("diagonal difference", () => {
   // given
   const input = [
     [11, 2, 4],
