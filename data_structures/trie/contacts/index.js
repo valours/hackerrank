@@ -4,9 +4,9 @@ module.exports = (queries) => {
 
   queries.forEach((query) => {
     const { action, partial } = query;
-    if (action === 'add') {
+    if (action === "add") {
       contacts.push(partial);
-    } else if (action === 'find') {
+    } else if (action === "find") {
       let itemFinded = 0;
       contacts.forEach((contact) => {
         const match = contact.match(`/${partial}/g`);

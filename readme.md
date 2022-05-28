@@ -2,9 +2,11 @@
 
 ## js
 
+## ts
+
 ### To run the tests
 
-ava
+with jest
 
 ```
 yarn test
