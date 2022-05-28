@@ -1,13 +1,6 @@
-# algorithms
-
-## js
-
-## ts
-
+# Main
 ### To run the tests
-
-with jest
-
-```
+With jest
+```bash
 yarn test
 ```
