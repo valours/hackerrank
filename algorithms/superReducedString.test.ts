@@ -1,4 +1,4 @@
-const superReducedString = require("./superReducedString");
+import superReducedString from "./superReducedString";
 
 it("superReducedString", () => {
   // given

@@ -1,4 +1,4 @@
-module.exports = (s) =>
+const superReducedString = (s: string) =>
   s
     .split("")
     .reduce((arr, l) => {
@@ -8,3 +8,5 @@ module.exports = (s) =>
       return arr;
     }, [])
     .join("");
+
+export default superReducedString;
