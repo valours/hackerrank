@@ -13,4 +13,4 @@ const countingValleys = (steps, path) => {
   return countValley;
 };
 
-module.exports = countingValleys;
+export default countingValleys;

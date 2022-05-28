@@ -1,12 +1,12 @@
-const countingValleys = require("./countingValley");
+import countingValleys from "./countingValley";
 
 describe("What do you want to describe ?", () => {
   it("UDDDUDUU", () => {
     // given
-    const input = [8, "UDDDUDUU"];
+    const [step, path] = [8, "UDDDUDUU"];
 
     // when
-    const result = countingValleys(...input);
+    const result = countingValleys(step, path);
 
     // then
     expect(result).toEqual(1);
@@ -14,10 +14,10 @@ describe("What do you want to describe ?", () => {
 
   it("DDUUDDUDUUUD", () => {
     // given
-    const input = [12, "DDUUDDUDUUUD"];
+    const [step, path] = [12, "DDUUDDUDUUUD"];
 
     // when
-    const result = countingValleys(...input);
+    const result = countingValleys(step, path);
 
     // then
     expect(result).toEqual(2);
