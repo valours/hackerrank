@@ -1,4 +1,4 @@
-const leftRotation = require("./leftRotation");
+import leftRotation from "./leftRotation";
 
 test("leftRotation", () => {
   // given

@@ -9,4 +9,4 @@ const rotLeft = (array, number_rotation) => {
   return arrayShifted;
 };
 
-module.exports = rotLeft;
+export default rotLeft;
