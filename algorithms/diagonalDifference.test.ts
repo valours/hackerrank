@@ -1,4 +1,4 @@
-const diagonalDifference = require("./diagonalDifference");
+import diagonalDifference from "./diagonalDifference";
 
 it("diagonal difference", () => {
   // given
