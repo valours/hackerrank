@@ -1,4 +1,4 @@
-const timeConversion = require("./timeConversion");
+import timeConversion from "./timeConversion";
 
 it("Il est 19:05:45", () => {
   // given
