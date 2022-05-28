@@ -1,4 +1,4 @@
-const camelCase = require("./camelCase");
+import camelCase from "./camelCase";
 
 test("camel case", () => {
   // given
