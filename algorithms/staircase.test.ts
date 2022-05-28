@@ -1,4 +1,4 @@
-const staircase = require("./staircase");
+import staircase from "./staircase";
 
 it("staircase", () => {
   // given
