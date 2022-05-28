@@ -1,4 +1,4 @@
-# Main
+# Hackerrank
 ### To run the tests
 With jest
 ```bash
