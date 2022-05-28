@@ -1,4 +1,4 @@
-const plusMinus = require("./plusMinus");
+import plusMinus from "./plusMinus";
 
 it("plusMinus", () => {
   // given
