@@ -1,4 +1,4 @@
-const miniMaxSum = require("./miniMaxSum");
+import miniMaxSum from "./miniMaxSum";
 
 describe("miniMaxSum", () => {
   it("return '10 14' for [1, 2, 3, 4, 5]", () => {
