@@ -15,7 +15,7 @@ const plusMinus = (arr: Number[]) => {
     roundToSixDecimal
   );
 
-  result.map((r) => console.log(r));
+  // result.map((r) => console.log(r));
 
   return result;
 };

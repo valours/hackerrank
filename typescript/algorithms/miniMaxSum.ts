@@ -12,7 +12,7 @@ const miniMaxSum = (arr: any[]) => {
 
   const result = [subMin.reduce(add), subMax.reduce(add)].join(" ");
 
-  console.log(result);
+  // console.log(result);
 
   return result;
 };
